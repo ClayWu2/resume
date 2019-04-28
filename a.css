@@ -1,5 +1,5 @@
 body{
-    background: grey;
+    background: #efefef;
     margin: 0;
     background-color: #efefef;
 }
@@ -17,6 +17,13 @@ hr{
     height: 0;
     border:none;
     border-top: 1px solid #dedede;
+}
+ul,ol{
+    list-style: none;
+
+}
+h1,h2,h3,h4,h5,h6,h7{
+    font-weight:normal;
 }
 .clearfix::after{
     content: '';
@@ -95,6 +102,8 @@ hr{
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+    box-shadow: 0px 1px 5px 1px rgba(230,104,106,0.71);
+
 }
 .userCard .welcome{
     background: #e6686a;
@@ -170,4 +179,180 @@ hr{
     height: 30px;
     fill:white;
     vertical-align: top;
+}
+
+body> main{
+    margin-top:-320px;
+}
+body> main .downloadresume-wrapper{
+    text-align: center;
+}
+body> main .downloadresume{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 22px 55px;
+    display: inline-block;
+    border:1px solid #cdcfd1;
+    background: #efefef;
+    border-radius: 2px;
+    color:#3d4451;
+    font-weight: bold;
+    margin: 32px 0;
+    transition: box-shadow 0.2s;
+}
+body> main .downloadresume:hover{
+    box-shadow: 1px 1px 24px 1px rgba(230,104,106,0.71);
+}
+
+.selfintroduction{
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section.skills,
+section.protfolio {
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}
+
+section.skills > h2,
+section.protfolio> h2   {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+
+}
+section.skills > h3{
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+section.skills > ol{
+    background: #white;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.71);
+    padding:42px 50px 0;  
+    margin-top: 30px;  
+}
+
+section.skills > ol>li{
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+section.skills > ol>li:nth-child(even){
+    float: right;
+}
+
+
+section.skills .progressBar{
+    height: 3px;
+    background: #fae1e1;
+    border-radius: 5px;
+    margin:4px 0 40px;
+}
+
+section.skills .progressBar> .progress1{
+    height: 100%;
+    background:#e6686a;
+    width: 70%;
+    border-radius: 5px;
+}
+section.skills .progressBar> .progress2{
+    height: 100%;
+    background:#e6686a;
+    width: 50%;
+    border-radius: 5px;
+}
+section.skills .progressBar> .progress3{
+    height: 100%;
+    background:#e6686a;
+    width: 80%;
+    border-radius: 5px;
+}
+section.skills .progressBar> .progress4{
+    height: 100%;
+    background:#e6686a;
+    width: 40%;
+    border-radius: 5px;
+}
+section.skills .progressBar> .progress5{
+    height: 100%;
+    background:#e6686a;
+    width: 50%;
+    border-radius: 5px;
+}
+section.skills .progressBar> .progress6{
+    height: 100%;
+    background:#e6686a;
+    width: 80%;
+    border-radius: 5px;
+}
+section.protfolio{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section.protfolio>nav{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;    
+    margin-top: 32px;
+}
+section.protfolio>nav>ol{
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;    
+}
+section.protfolio>nav>ol>li{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+
+}
+
+section.protfolio>nav>ol>li:first-child{
+    margin-left: 0;
+}
+
+section.protfolio>nav .bar{
+   background: white;
+   margin-top: 5px;
+   height: 5px;
+   margin-bottom: 28px;
+   border-radius: 2px;
+}
+section.protfolio>nav .bar-inner{
+    background:#e6686a;
+    height: 100%;
+    border-radius: 2px;
+    transition: 0.3s;
+
+}
+section.protfolio>nav .bar.state-1 .bar-inner{
+    margin-left: 0;
+    width: 50px;
+}
+section.protfolio>nav .bar.state-2 .bar-inner{
+    margin-left: 65px;
+    width: 50px;
+  }
+section.protfolio>nav .bar.state-3 .bar-inner{
+    margin-left: 140px;
+    width: 96px;
+  }
+section.protfolio .works{
+    position: relative;
+}
+section.protfolio .works > .big,
+section.protfolio .works > .small{
+    position: absolute;
 }
